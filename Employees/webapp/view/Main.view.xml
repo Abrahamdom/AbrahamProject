@@ -1,0 +1,43 @@
+<mvc:View controllerName="abrahamgroup.Employees.controller.Main" 
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m" 
+          displayBlock="true">
+
+    <Page id="pageMain" title="{i18n>titleMainPage}">
+		<content>
+            <!--Primer Panel expandible-->
+            <Panel headerText="{i18n>headerTextPanelEmployee}" expand="true" expandable="true" expandAnimation="true" >
+                <!--Primer Tile para crear un empleado, al presionarlo navegará a la vista CreateEmployee-->
+                <GenericTile headerImage="sap-icon://add-employee" press="toCreateEmployee" class="sapUiSmallMarginEnd">
+                    <TileContent footer="{i18n>footerTileCreateEmployee}">
+                    </TileContent>
+                </GenericTile>
+                <!--Segundo Tile para visualizar un empleado-->
+                <GenericTile headerImage="sap-icon://employee-lookup" press="toSeeEmployee">
+                    <TileContent footer="{i18n>footerTileSeeEmployee}">                    
+                    </TileContent>
+                </GenericTile>
+            </Panel>
+            <!--Segundo Panel expandible-->
+            <Panel headerText="{i18n>headerTextPanelOrders}" expand="true" expandable="true" expandAnimation="true" >
+                <!--Tile para firmar pedido-->
+                <GenericTile headerImage="sap-icon://signature" press="toSignOrder">
+                    <TileContent footer="{i18n>footerTileSignOrder}">                    
+                    </TileContent>
+                </GenericTile>
+            
+            </Panel>
+        
+        </content>
+	</Page>
+	
+    
+
+
+
+
+
+
+
+    
+</mvc:View>

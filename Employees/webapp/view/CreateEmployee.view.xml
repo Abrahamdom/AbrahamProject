@@ -1,0 +1,35 @@
+<mvc:View controllerName="abrahamgroup.Employees.controller.CreateEmployee" 
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:form="sap.ui.layout.form" 
+          xmlns:u="sap.ui.unified"
+          displayBlock="true">
+
+        
+        <NavContainer>
+            <Page id="pageCreateEmployee" title="{i18n>titleCreateEmployeePage}">
+                <content>
+                    <Wizard>
+                        <WizardStep title="{i18n>wizardTypeEmployee}" validated="false">
+                            <MessageStrip text="{i18n>messageStripTypeEmployee}" showIcon="true" class="sapUiSmallMarginBottom"/>
+                            <FlexBox alignItems="Center" justifyContent="Center">
+                                <Button text="{i18n>btnIntern}" class="sapUiSmallMarginEnd" />
+                                <Button text="{i18n>btnAutonomous}" class="sapUiSmallMarginEnd" />
+                                <Button text="{i18n>btnManager}"/>
+                            </FlexBox>
+                        </WizardStep>
+                        <WizardStep title="{i18n>wizardDataEmployee}" validated="false"></WizardStep>
+                        <WizardStep title="{i18n>wizardAditionalInfo}" validated="false"></WizardStep>
+                    </Wizard>
+                </content>   
+                    <footer>
+                        <OverflowToolbar >
+                            <ToolbarSpacer/>
+                                <Button text="{i18n>cancelCreateEmployee}" press="onBack"/>                    
+                        </OverflowToolbar>
+                    </footer>
+                
+            </Page>
+        </NavContainer>     
+                    
+</mvc:View>

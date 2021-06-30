@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run abrahamProject-Employees",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/abrahamproject-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/abrahamgroupEmployees/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "cwd": "${workspaceFolder}/Employees",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/abrahamProject/Employees\"}"
+      },
+      "envFile": "${workspaceFolder}/Employees/.env1",
+      "preLaunchTask": "Build abrahamProject"
+    }
+  ]
+}
